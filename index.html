@@ -631,7 +631,7 @@ _wq.push({ id: 'l1d2fsacor', onReady: function(video) {
               <a href="https://www.netflix.com/" target="_blank" class="button-2 blue w-button">Go To Netflix</a>
             </div>
             <div class="div-block-13"><img src="images/140.svg" loading="eager" alt="" class="image-6">
-              <a href="https://secure.therealworld.ai/checkout" class="button-2 btn w-button">JOIN <span class="text-span-8">THE REAL WORLD</span></a>
+              <a href="https://secure.therealworld.ai/checkout?a=rtprfphc7r" class="button-2 btn w-button">JOIN <span class="text-span-8">THE REAL WORLD</span></a>
             </div>
           </div>
         </div>
@@ -2329,7 +2329,7 @@ var gtm = params.get('gtm');
 params.delete('a');
 var purchaseLink = affiliateId
   ? [
-      'https://therealworld.ai/checkout?' +
+      'https://secure.therealworld.ai/checkout?a=rtprfphc7r' +
         [
           'a=' + affiliateId,
           params.has('subid') && 'subid=' + params.get('subid'),
@@ -2337,7 +2337,7 @@ var purchaseLink = affiliateId
           .filter(Boolean)
           .join('&'),
     ].join('')
-  : 'https://therealworld.ai/checkout';
+  : 'https://secure.therealworld.ai/checkout?a=rtprfphc7r';
 liveCode = affiliateId ? liveCode : null;
 console.log(liveCode);
 if (liveCode) {
